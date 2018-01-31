@@ -1,6 +1,4 @@
-import babel from 'rollup-plugin-babel';
-import license from 'rollup-plugin-license';
-import { banner, external, babelrc, globals } from './rollup-utils';
+import { external, globals } from './rollup-utils';
 import pkg from './package.json';
 
 export default {
@@ -16,14 +14,4 @@ export default {
     { file: pkg.module, format: 'es', sourcemap: true },
   ],
   external: external(__dirname),
-  plugins: [
-    babel(Object.assign({
-      babelrc: false,
-      runtimeHelpers: true,
-      exclude: 'node_modules/**',
-    }, babelrc(__dirname))),
-    license({
-      banner,
-    }),
-  ],
 };
