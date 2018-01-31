@@ -1,5 +1,5 @@
-import $ from 'jquery';
+import Test from 'b';
 
-export const ComponentTwo = () => {
-  console.log($);
+export const Test1 = () => {
+  console.log(Test);
 };

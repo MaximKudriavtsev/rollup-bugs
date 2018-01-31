@@ -1,5 +1,5 @@
-import uuidv4 from 'uuid/v4';
+import { Test as Test1 } from 'a';
 
-export const ComponentOne = () => {
-  console.log(uuidv4());
+export const Test = () => {
+  console.log(Test1);
 };
