@@ -10,4 +10,3 @@ const Test1 = () => {
 };
 
 export { Test$1 as Test, Test1 };
-//# sourceMappingURL=project-name.es.js.map
