@@ -1,4 +1,3 @@
-import { external, globals } from './rollup-utils';
 import pkg from './package.json';
 
 export default {
@@ -7,11 +6,10 @@ export default {
     {
       file: pkg.main,
       format: 'umd',
-      name: pkg.globalName,
-      sourcemap: true,
-      globals: globals(),
-    },
-    { file: pkg.module, format: 'es', sourcemap: true },
+      name: 'RootName.ProjectName',
+      globals: (moduleId) => {
+        console.log(moduleId);
+      },
+    }
   ],
-  external: external(__dirname),
 };

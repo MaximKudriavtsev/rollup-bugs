@@ -1,2 +1,3 @@
-export { ComponentOne } from './components/component-one';
-export { ComponentTwo } from './components/component-two';
+export const a = () => {
+  console.log('a');
+};
